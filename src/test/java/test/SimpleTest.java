@@ -60,10 +60,10 @@ public class SimpleTest extends Base_Simple_Test {
 
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='cart_item']")));
 
-		List<WebElement> AddTocartList = new ArrayList<WebElement>(
-				driver.findElements(By.xpath("//div[@class='cart_item']")));
+		List<WebElement> AddTocartList = 
+				driver.findElements(By.xpath("//div[@class='cart_item']"));
 
-		WebElement listName = AddTocartList.getFirst();
+		WebElement listName = AddTocartList.get(0);
 		String lisnm = listName.getText();
 		System.out.println(lisnm);
 
