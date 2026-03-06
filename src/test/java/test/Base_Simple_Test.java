@@ -12,12 +12,14 @@ public class Base_Simple_Test {
 
 	protected  WebDriver driver;
 
+	
 	@BeforeMethod()
 	public void setUp() throws IOException {
 
 		ConfigReader config = new ConfigReader();
 
 		String URL = config.getURL();
+		//Chrome Browser Option
 		ChromeOptions options = new ChromeOptions();
 	    options.addArguments("--headless=new");
 	    options.addArguments("--no-sandbox");
