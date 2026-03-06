@@ -55,6 +55,7 @@ public class SimpleTest extends Base_Simple_Test {
 
 		driver.findElement(By.xpath("//a[@class = 'shopping_cart_link']")).click();
 		// driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		//Wait Class
 
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 
