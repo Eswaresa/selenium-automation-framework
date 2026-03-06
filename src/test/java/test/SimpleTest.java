@@ -135,7 +135,7 @@ public class SimpleTest extends Base_Simple_Test {
 	        lgpage.PassWord(pass);
 	        lgpage.loginButton();
 
-	        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+	        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
 
 	        // Add first product to cart
 	        driver.findElement(By.xpath("(//button[contains(@class,'btn_inventory')])[1]")).click();
